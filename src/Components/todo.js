@@ -6,6 +6,7 @@ import {v4 as uuid} from "uuid";
 
 const Todo=()=>{
     const [data, setData] = React.useState([]);
+    const [showAll,setShowAll]=React.useState(true);
 
     const handleAdd = (title)=>{
         const payload = {
@@ -39,9 +40,12 @@ const Todo=()=>{
         <div>
             <h1>Todo App</h1>
             <Todoinput onClick={handleAdd}/>
-            {data.map((element)=>(
+            {data
+            .filter((element)=> showAll? true : !element.status )
+            .map((element)=>(
                 <Todolist handleDelete={handleDelete} handleToggle={handleToggle} key={element.id} {...element} />
             ))}
+            <button onClick={()=>setShowAll(!showAll)}>{showAll ? "Show Unfininished Task" : "Show All"}</button>
         </div>
     )
 }

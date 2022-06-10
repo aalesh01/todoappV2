@@ -8,7 +8,7 @@ const Todoinput = ({onClick}) => {
     return (
         <>
             <div>
-                <input placeholder="Enter Grocery Item" 
+                <input placeholder="Enter a task" 
                 value={title}
                 onChange={(e) =>  setTitle(e.target.value)}
                  />
