@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "title": "Bread",
+      "status": true,
+      "id": "ebc68cca-1905-459a-9ab5-d9caec719a1f"
+    },
+    {
+      "title": "Ghee",
+      "status": true,
+      "id": "711c6480-bdc0-4df1-8833-54a9094f5bac"
+    },
+    {
+      "title": "salt",
+      "status": true,
+      "id": "a4fdeca1-6d91-446f-8fdf-195e60e677d7"
+    },
+    {
+      "title": "Bread",
+      "status": false,
+      "id": "60ac7d99-22d1-4f63-ab05-73934ef1c888"
+    },
+    {
+      "title": "Mik",
+      "status": false,
+      "id": "0b3144b1-2030-45ac-9720-75e2e417c113"
+    }
+  ]
+}
